@@ -1,0 +1,16 @@
+create table tblproduct(
+id int(8) NOT NULL AUTO_INCREMENT,
+name varchar(255) NOT NULL,
+code varchar(255) NOT NULL, 
+image text,
+quantity int(100),
+price double(10,2) NOT NULL, 
+PRIMARY KEY(id))ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO tblproduct(id,name,code,image,quantity,price) VALUES 
+(1,'CC TV Camera','3DcAMo1','images/cctvcamera.png',1,2500.00),
+(2,'HeadSet','4cAMo1','images/headset.jpg',1,800.00),
+(3,'MAC','7t3cAMo1','images/iphone.png',1,750000.00),
+(4,'Laptop','2GcAMo1','images/laptop.jpeg',1,45000.00),
+(5,'Watch','K7cAMo1','images/watch.png',1,1200.00);
+
